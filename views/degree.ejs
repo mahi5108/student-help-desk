@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degree certificate</title>
+    <link rel="stylesheet" href="/css/dc.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="card">
+            <form action="/helpdesk/jhbdf/degree" method="POST">
+    <h1>NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA</h1>
+    <h2>FORM FOR DEGREE CERTIFICATE</h2>
+    <hr>
+    <p>(Through Head of the Department/Respective Warden of Hostel/T&P Cell etc.)</p>
+    <p>The Deputy Register(Academic)<br>
+        National Institute of Technology Kurukshetra<br>
+        Subject:<b>Request to issue the Degree Certificate</b><br>
+        Sir,<br>Kindly arrange to issue the Degree Certificate.
+    </p>
+    <p>
+      <div class="radio-container">
+        <label for="payment based on students" class="tag">Choose an Option</label><br>
+        <input type="radio" name="choice" id="bef 16th convo">
+        <label for="bef 16th convo">Student Before 16th Convocation</label><br>
+        <input type="radio" name="choice" id="bet 16th & 17th convo">
+        <label for="bet 16th & 17th convo">Student in 16th and 17th Convocation</label><br>
+        <input type="radio" name="choice" id="18th convo">
+        <label for="18th convo">Student from 18th Convocation Onwards</label>
+    </div>
+        <h3>PARTICULARS OF THE STUDENT</h3>
+        <input type="radio" name="choice" id="firsttime">
+        <label for="firsttime">Taking the certificate for first time</label>
+        <input type="radio" name="choice" id="reissue">
+        <label for="reissue">Re-issue</label><br>
+      
+        <label for="roll no" class="tag">Roll No</label>
+        <input type="number" name="rollno" id="roll no" placeholder="Enter Your Roll No"><br>
+     
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Enter Your E-mail"><br>
+       
+        <p>Thanking You<br>
+            Yours faithfully,<br>
+        </p>
+        <label for="sign">Upload Signature of the Student</label>
+        <input type="file" name="sign" id="sign"><br>
+        <p>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Degree Certificate</th>
+                </tr>
+                <tr>
+                    <th>Cost in Ruppees</th>
+                    <th>Student</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rs.500/-</td>
+                    <td>Before 16th Convocation</td>
+                </tr>
+                <tr>
+                    <td>Rs.1000/-</td>
+                    <td>16th and 17th Convocation</td>
+                </tr>
+                <tr>
+                    <td>Rs.1500/-</td>
+                    <td>From 18th Convocation onwards</td>
+                </tr>
+                <tr>
+                    <td>Rs.2000/-</td>
+                    <td>For Re-issue</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Postal Charges</th>
+                </tr>
+                <tr>
+                    <th>Anywhere in India</th>
+                    <th>Outside India</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rs.150/-</td>
+                    <td>Rs.1000/-</td>
+                </tr>
+            </tbody>
+        </table>
+        </p>
+        <p>For Payment<a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm">Click Here</a>
+        </p><br>
+        <label for="payment">Upload Payment Receipt</label>
+        <input type="file" name="payment" id="payment"><br>
+        <label for="id">Upload ID Card</label>
+        <input type="file" name="idcard" id="id"><br>
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date"><br>
+        <input type="checkbox" name="info is correct" id="correct" required>
+        <label for="correct">I hereby declare that all the above particulars filled by me are
+            correct and that in case of any discrepancy found therein subsequently at any stage,
+            i shall be responsible for the consequences out from there.</label><br>
+        <button type="button" id="back"><a href="helpdesk.html">Back</a></button>
+        <button type="reset">reset</button>
+        <button type="submit" id="submit">submit</button><br>
+    </form>
+    </p>
+</body>
+
+</html>

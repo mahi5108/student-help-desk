@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/request.css" />
+  </head>
+  <body>
+    <% if(data!=null) { var json = JSON.parse(data); var data = json.data; var
+    type = json.type; console.log(data.length); var ejsFile; switch (type) {
+    case "Reappear": ejsFile = "reappearcard.ejs"; break; case "Character":
+    ejsFile = "charactercard.ejs"; break; case "Bonafide": ejsFile =
+    "bonafidecard.ejs"; break; case "Degree": ejsFile = "degreecard.ejs"; break;
+    case "DMC": ejsFile = "dmccard.ejs"; break; case "IdCard": ejsFile =
+    "idcardcard.ejs"; break; case "Migration": ejsFile = "migrationcard.ejs";
+    break; case "Transcript": ejsFile = "transcriptcard.ejs"; break; } } %>
+    <div class="form-container">
+      <h1>REQUEST HISTORY</h1>
+      <H2>SELECT THE TYPE OF REQUESTS: </H2>
+   
+      <form action="/admin/1234" , method="get">
+        <label for="request-history"></label>
+        <select name="type" id="request-history">
+          <option value="select">Select A Request History</option>
+          <option value="Bonafide">Bonafide</option>
+          <option value="Character">Character</option>
+          <option value="Degree">Degree</option>
+          <option value="DMC">DMC</option>
+          <option value="IdCard">Idcard</option>
+          <option value="Migration">Migration</option>
+          <option value="Reappear">Reappear</option>
+          <option value="Transcript">Transcript</option>
+        </select>
+        <input type="submit"></input>
+      </form>
+    </div>
+    <% for(var i in data) { %> <%- include(ejsFile,{"request": data[i]})%> <% }
+    %>
+  </body>
+</html>

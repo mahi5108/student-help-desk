@@ -1,0 +1,126 @@
+/* Set the background image */
+body {
+    background-image: url('C:\Users\KSagar\Downloads\admin image.jpg');
+    background-size: cover;
+  }
+  /* Style for the cards */
+.card {
+  background-color: gray;
+  
+  
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style for the card title */
+.card h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style for the card content */
+.card span {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Style for the submit button */
+
+  
+  /* Style the body and headings */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: darkslategrey;
+    margin: 50px 0 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0 10px;
+    color: #0d1b2a;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Style the dropdown menu */
+  select {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    background-color: #f9f7f3;
+    border-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin: 20px 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style the submit button */
+  input[type="submit"] {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #6b705c;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0f4c5c;
+  }
+  
+  /* Style the options in the dropdown menu */
+  option {
+    color: black;
+    background-color:white;
+  }
+  
+  /* Hide the default arrow on the dropdown menu */
+  select::-ms-expand {
+    display: none;
+  }
+  
+  select::-webkit-outer-spin-button,
+  select::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Style the form container */
+  .form-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color:#edf2f4;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  

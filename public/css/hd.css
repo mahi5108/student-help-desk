@@ -1,0 +1,77 @@
+body {
+  background-image: url("/assets/kkrlogo.png");
+ background-color: #e8e8e4;
+ 
+
+  
+background-position: center;
+
+background-repeat: no-repeat;
+}
+ 
+img{
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  background-color: black;
+  color: cyan;
+  text-shadow: 2px 2px #000000;
+  margin: 50px 0 20px 0;
+  border-radius: 50%;
+}
+
+h2 {
+  font-size: 30px;
+  color: black;
+  text-shadow: 2px 2px white;
+  margin-top: 50px;
+}
+
+h3 {
+  font-size: 24px;
+  color: #FFFFFF;
+  text-shadow: 1px 1px #000000;
+  margin-top: 20px;
+}
+
+a {
+  color: #031d44;
+  text-decoration: none;
+  text-shadow: 1px 1px #000000;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #daa49a;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #FFA500;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #FFFFFF;
+  color: #FFA500;
+  box-shadow: 2px 2px #000000;
+}
