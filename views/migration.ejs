@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>migration certificate</title>
-    <link rel="stylesheet" href="/css/mc.css">
-</head>
+    <link rel="stylesheet" href="/css/global.css" />
+  </head>
 
-<body>
-    <h1>NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA</h1>
-    <h2>MIGRATION CERTIFICATE FORM</h2>
-    <hr>
-    <p>(Through Head of the Department/Respective Warden of Hostel/T&P Cell etc.)</p>
-    <p>The Deputy Register(Academic)<br>
-        National Institute of Technology Kurukshetra<br>
-        Subject:<b>Request to issue the Migration Certificate</b><br>
-        Sir,<br>Kindly arrange to issue the Migration certificate for the purpose of
+  <body>
+    <nav>
+      <p>NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA</p>
+    </nav>
     <form action="/helpdesk/jdbhrf/migration" method="POST">
-        <input type="text" name="issue3">
-    </p>
-    <p>
- 
-        <input type="radio" name="choice" id="firsttime">
-        <label for="firsttime">Taking the certificate for first time</label>
-        <input type="radio" name="choice" id="reissue">
-        <label for="reissue">Re-issue</label>
-  
-    </p>
-    <h3>Particulars of the student</h3>
+      <h2>MIGRATION CERTIFICATE FORM</h2>
+      <hr />
+      <p>
+        (Through Head of the Department/Respective Warden of Hostel/T&P Cell
+        etc.)
+      </p>
+      <p>
+        The Deputy Register(Academic)<br />
+        National Institute of Technology Kurukshetra<br />
+        Subject:<b>Request to issue the Migration Certificate</b><br />
+        Sir,<br />Kindly arrange to issue the Migration certificate for the
+        purpose of
+        <input type="text" name="issue3" />
+      </p>
 
-        <label for="name">Name</label>
-        <input id="name" type="text" placeholder="Enter Your Name" name="name"><br>
-        <label for="roll no">Roll No</label>
-        <input type="number" name="rollno" id="roll no" placeholder="Enter Your Roll No"><br>
-        <label for="fathername">Father's Name</label>
-        <input type="text" name="fathersname" id="fathername" placeholder="Enter Your Father's Name"><br>
+      <input type="radio" name="choice" id="firsttime" />
+      <label for="firsttime">Taking the certificate for first time</label>
+      <input type="radio" name="choice" id="reissue" />
+      <label for="reissue">Re-issue</label>
+
+      <h3>Particulars of the student</h3>
+
+      <!--<label for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter Your Name" name="name" /><br>-->
+      <label for="roll no">Roll No</label>
+      <input
+        type="number"
+        name="rollno"
+        id="roll no"
+        placeholder="Enter Your Roll No"
+      /><br />
+      <!-- <label for="fathername">Father's Name</label>
+        <input type="text" name="fathersname" id="fathername" placeholder="Enter Your Father's Name" /><br>
         <label for="semester">Select your Semester</label>
         <select name="semester" id="semester">
             <option value="">--Select Your Semester--</option>
@@ -81,32 +90,53 @@
 
         <label for="yop">Year of
             <label for="yop">Year of Passing(if applicable)</label>
-            <input type="number" name="yop" id="yop" placeholder="Year of Passing"><br>
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="Enter Your E-mail"><br>
-            <label for="mobileno">Mobile No</label>
-            <input type="number" name="mobno" id="mobileno" placeholder="Enter Your Mobile No"><br>
-            <p>Thanking You<br>
-                Yours faithfully,<br>
-            </p>
-            <label for="sign">Upload Signature of the Student</label>
-            <input type="file" name="sign" id="sign"><br>
-            <p><b>Migration Certificate=NIL(Rs.500 for Re-issue)</b></p>
-            <p>For Payment<a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm">Click Here</a></p><br>
-            <label for="payment">Upload Payment Receipt</label>
-            <input type="file" name="payment" id="payment"><br>
-            <label for="id">Upload ID Card</label>
-            <input type="file" name="idcard" id="id"><br>
-            <label for="date">Date</label>
-            <input type="date" name="date" id="date"><br>
-            <input type="checkbox" name="info is correct" id="correct" required>
-            <label for="correct">I hereby declare that all the above particulars filled by me are
-                correct and that in case of any discrepancy found therein subsequently at any stage,
-                i shall be responsible for the consequences out from there.</label><br>
-            <button type="button"><a href="helpdesk.html">Back</a></button>
-            <button type="reset">reset</button>
-            <button type="submit">submit</button><br>
+            <input type="number" name="yop" id="yop" placeholder="Year of Passing" /><br> -->
+      <label for="email">E-mail</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter Your E-mail"
+      /><br />
+      <!-- <label for="mobileno">Mobile No</label>
+      <input
+        type="number"
+        name="mobno"
+        id="mobileno"
+        placeholder="Enter Your Mobile No"
+      /><br /> -->
+      <p>
+        Thanking You<br />
+        Yours faithfully,<br />
+      </p>
+      <label for="sign">Upload Signature of the Student</label>
+      <input type="file" name="sign" id="sign" /><br />
+      <p><b>Migration Certificate=NIL(Rs.500 for Re-issue)</b></p>
+      <p>
+        For Payment<a
+          href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm"
+          >Click Here</a
+        >
+      </p>
+      <br />
+      <label for="payment">Upload Payment Receipt</label>
+      <input type="file" name="payment" id="payment" /><br />
+      <label for="id">Upload ID Card</label>
+      <input type="file" name="idcard" id="id" /><br />
+      <label for="date">Date</label>
+      <input type="date" name="date" id="date" /><br />
+      <input type="checkbox" name="info is correct" id="correct" required />
+      <label for="correct"
+        >I hereby declare that all the above particulars filled by me are
+        correct and that in case of any discrepancy found therein subsequently
+        at any stage, i shall be responsible for the consequences out from
+        there.</label
+      ><br />
+      <div class="form-buttons">
+        <button type="button" onclick="window.history.back();">Back</button>
+        <button type="reset">reset</button>
+        <button type="submit">submit</button><br />
+      </div>
     </form>
-</body>
-
+  </body>
 </html>

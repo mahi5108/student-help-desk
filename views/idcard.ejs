@@ -5,24 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>id card lost</title>
-    <link rel="stylesheet" href="/css/id.css" />
+    <link rel="stylesheet" href="/css/global.css" />
   </head>
 
   <body>
-    <h1>NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA</h1>
-    <h2>LOST ID CARD FORM</h2>
-    <hr />
-    <p>
-      (Through Head of the Department/Respective Warden of Hostel/T&P Cell etc.)
-    </p>
-    <p>
-      The Deputy Register(Academic)<br />
-      National Institute of Technology Kurukshetra<br />
-      Subject:<b>Request for Re-issue of Id-Card</b><br />
-      Sir,<br />Kindly arrange to Re-issue the Id-Card
-    </p>
-    <h3>Particulars of the student</h3>
+    <nav>
+      <p>NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA</p>
+    </nav>
     <form action="/helpdesk/hgef/idcard" method="POST">
+      <h2>LOST ID CARD FORM</h2>
+      <hr />
+      <p>
+        (Through Head of the Department/Respective Warden of Hostel/T&P Cell
+        etc.)
+      </p>
+      <p>
+        The Deputy Register(Academic)<br />
+        National Institute of Technology Kurukshetra<br />
+        Subject:<b>Request for Re-issue of Id-Card</b><br />
+        Sir,<br />Kindly arrange to Re-issue the Id-Card
+      </p>
+      <h3>Particulars of the student</h3>
       <label for="name">Name</label>
       <input
         id="name"
@@ -137,9 +140,11 @@
         at any stage, i shall be responsible for the consequences out from
         there.</label
       ><br />
-      <button type="button"><a href="helpdesk.html">Back</a></button>
-      <button type="reset">Reset</button>
-      <button type="submit">Submit</button><br />
+      <div class="form-buttons">
+        <button type="button" onclick="window.history.back();">Back</button>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button><br />
+      </div>
     </form>
   </body>
 </html>

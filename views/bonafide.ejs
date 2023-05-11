@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bonafide certificate</title>
     <link rel="stylesheet" href="/css/bc.css" />
+    <link rel="stylesheet" href="/css/global.css" />
   </head>
 
   <body>
     <div id="container">
-      <div class="card">
+      <div class=>
+        <nav>
+          <p>NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA</p>
+        </nav>
         <form class="form" action="/helpdesk/hfytc/bonafide" method="POST">
-          <h1>NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA</h1>
           <h2>BONAFIDE CERTIFICATE FORM</h2>
-          <hr />
           <p>
             (Through Head of the Department/Respective Warden of Hostel/T&P Cell
             etc.)
@@ -22,49 +24,63 @@
           <p>
             The Deputy Register(Academic)<br />
             National Institute of Technology Kurukshetra<br />
-            Subject:<b>Request to issue the Bonafide certificate</b><br />
+            Subject:<b style="margin-left: 6px"
+              >Request to issue the Bonafide certificate</b
+            ><br />
             Sir,<br />Kindly arrange to issue the bonafide certificate for the
             purpose of
           </p>
           <div class="issue">
-            <label for="issue">Issue</label>
-            <input
-              type="text"
-              name="issue"
-              id="issue"
-              placeholder="Type your issue here"
-            />
+            <div class="input">
+              <label for="issue">Issue</label>
+              <input
+                type="text"
+                name="issue"
+                id="issue"
+                placeholder="Type your issue here"
+              />
+            </div>
           </div>
 
           <h3>PARTICULARS OF THE STUDENT</h3>
 
-          <label for="roll no">Roll No</label>
-          <input
-            type="number"
-            name="rollno"
-            id="roll no"
-            placeholder="Enter Your Roll No"
-          /><br />
+          <div class="input">
+            <label for="roll no">Roll No</label>
+            <input
+              type="number"
+              name="rollno"
+              id="roll no"
+              placeholder="Enter Your Roll No"
+            />
+          </div>
 
-          <label for="email">E-mail</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter Your E-mail"
-          /><br />
+          <div class="input">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Your E-mail"
+            />
+          </div>
 
           <p>
             Thanking You<br />
             Yours faithfully,<br />
           </p>
-          <label for="sign">Upload Signature of the Student</label>
-          <input type="file" name="sign" id="sign" /><br />
+          <div class="input">
+            <label for="sign">Upload Signature of the Student</label>
+            <input type="file" name="sign" id="sign" /><br />
+          </div>
           <p><b>Bonafide Certificate=NIL(Rs.0)</b></p>
-          <label for="id">Upload ID Card</label>
-          <input type="file" name="idcard" id="id" /><br />
-          <label for="date">Date</label>
-          <input type="date" name="date" id="date" /><br />
+          <div class="input">
+            <label for="id">Upload ID Card</label>
+            <input type="file" name="idcard" id="id" /><br />
+          </div>
+          <div class="input">
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" /><br />
+          </div>
           <div class="checkbox-container">
             <input
               type="checkbox"
@@ -80,9 +96,7 @@
             ><br />
           </div>
           <div class="form-buttons">
-            <button type="button">
-              <a href="/helpdesk/djfn/helpdesk.ejs">Back</a>
-            </button>
+            <button type="button" onclick="window.history.back();">Back</button>
             <button type="reset">reset</button>
             <button type="submit">submit</button><br />
           </div>

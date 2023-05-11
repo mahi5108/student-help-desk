@@ -61,7 +61,7 @@ const getDmc = (req, res) => {
 };
 const getIdcard = (req, res) => {
   try {
-    res.render("id card lost");
+    res.render("idcard");
   } catch (err) {
     console.error(err);
   }

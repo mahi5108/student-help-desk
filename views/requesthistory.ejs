@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/request.css" />
+    <!-- <link rel="stylesheet" href="/css/request.css" /> -->
+    <link rel="stylesheet" href="/css/global.css" />
   </head>
   <body>
     <% if(data!=null) { var json = JSON.parse(data); var data = json.data; var
@@ -17,15 +18,17 @@
     "idcardcard.ejs"; break; case "Migration": ejsFile = "migrationcard.ejs";
     break; case "Transcript": ejsFile = "transcriptcard.ejs"; break; } } %>
     <div class="form-container">
-      <h1>REQUEST HISTORY</h1>
-      <H2>SELECT THE TYPE OF REQUESTS: </H2>
-   
+      <nav>
+        <p>REQUEST HISTORY</p>
+      </nav>
       <form action="/admin/1234" , method="get">
+        <h2>SELECT THE TYPE OF REQUESTS:</h2>
+
         <label for="request-history"></label>
         <select name="type" id="request-history">
           <option value="select">Select A Request History</option>
-          <option value="Bonafide">Bonafide</option>
           <option value="Character">Character</option>
+          <option value="Bonafide">Bonafide</option>
           <option value="Degree">Degree</option>
           <option value="DMC">DMC</option>
           <option value="IdCard">Idcard</option>
@@ -33,10 +36,10 @@
           <option value="Reappear">Reappear</option>
           <option value="Transcript">Transcript</option>
         </select>
-        <input type="submit"></input>
+        <button type="submit">SUBMIT</button>
       </form>
     </div>
-    <% for(var i in data) { %> <%- include(ejsFile,{"request": data[i]})%> <% }
-    %>
+    <% console.log(data) %> <% for(var i in data) { if(data[i]) {%> <%-
+    include(ejsFile,{"request": data[i]})%> <% }} %>
   </body>
 </html>

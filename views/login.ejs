@@ -2,19 +2,22 @@
 <html>
   <head>
     <title>Student Help Desk Login</title>
-    <link rel="stylesheet" href="/css/login.css" />
+    <!-- <link rel="stylesheet" href="/css/login.css" /> -->
+    <link rel="stylesheet" href="/css/global.css" />
   </head>
   <body>
-    <h1>Student Help Desk Login</h1>
-    <div class="login-container">
-      <div class="card">
-        <div class="card-header">Admin Login</div>
+    <nav>
+      <p>Student Help Desk Login</p>
+    </nav>
+    <div class="flex-container">
+      <div class=>
+        <h2 class="card-header">Admin Login</h2>
         <div class="card-body">
           <form action="/adminLogin" method="post">
-            <label for="username">Username:</label>
+            <label for="username">Username:</label><br />
             <input type="text" id="username" name="username" required /><br />
 
-            <label for="password">Password:</label>
+            <label for="password">Password:</label><br />
             <input
               type="password"
               id="password"
@@ -27,8 +30,8 @@
         </div>
       </div>
       <br />
-      <div class="card">
-        <div class="card-header">Student Login</div>
+      <div class=>
+        <h2 class="card-header">Student Login</h2>
         <div class="card-body">
           <form action="/login" method="post">
             <label for="rollno">Roll No:</label><br />
