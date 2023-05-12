@@ -45,7 +45,7 @@ app.get("/", (req, res) => {
 //   res.json({error: "Error 404"})
 // })
 
-app.listen(PORT, (error) => {
+app.listen(process.env.PORT || PORT, (error) => {
   if (!error)
     console.log(
       "Server is Successfully Running, and App is listening on port " + PORT
