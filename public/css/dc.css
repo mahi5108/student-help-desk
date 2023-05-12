@@ -1,4 +1,4 @@
-h1 {
+/* h1 {
     color: cyan;
     background-color: black;
     text-align: center;
@@ -101,4 +101,35 @@ body {
   .radio-container input[type="radio"]:focus {
     outline: none;
   }
-  
+   */
+   
+      .table1 {
+        margin-top: 30px;
+        border-collapse: collapse;
+        margin-left: 20px;
+        width: 400px;
+        margin-bottom: 30px;
+      }
+      .table2 {
+        border-collapse: collapse;
+        margin-left: 20px;
+        width: 400px;
+        
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 4px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+
+      th[colspan="2"] {
+        text-align: center;
+      }
+    

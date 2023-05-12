@@ -39,7 +39,9 @@
         <button type="submit">SUBMIT</button>
       </form>
     </div>
-    <% console.log(data) %> <% for(var i in data) { if(data[i]) {%> <%-
-    include(ejsFile,{"request": data[i]})%> <% }} %>
+    <div class="card-container">
+      <% console.log(data) %> <% for(var i in data) { if(data[i]) {%> <%-
+      include(ejsFile,{"request": data[i]})%> <% }} %>
+    </div>
   </body>
 </html>

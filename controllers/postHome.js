@@ -39,7 +39,7 @@ const reappear = async (req, res) => {
 
     await newRequest.save();
 
-    res.json({ message: "Request submitted!" });
+    res.render("thankyou")
   } catch (err) {
     console.error(err);
     res.json({error: err});
@@ -61,7 +61,7 @@ const bonafide = async (req, res) => {
     });
 
     await newRequest.save();
-    res.json({ message: "Request submitted!" });
+    res.render("thankyou")
   } catch (err) {
     console.error(err);
     res.json({error: err});
@@ -81,7 +81,7 @@ const character = async (req, res) => {
       requestId: result._id,
     });
     await newRequest.save();
-    res.json({ message: "Request submitted!" });
+    res.render("thankyou")
   } catch (err) {
     console.error(err);
     res.json({error: err});
@@ -101,7 +101,7 @@ const degree = async (req, res) => {
       requestId: result._id,
     });
     await newRequest.save();
-    res.json({ message: "Request submitted!" });
+    res.render("thankyou")
   } catch (err) {
     console.error(err);
     res.json({error: err});
@@ -121,7 +121,7 @@ const dmc = async (req, res) => {
       requestId: result._id,
     });
     await newRequest.save();
-    res.json({ message: "Request submitted!" });
+    res.render("thankyou")
   } catch (err) {
     console.error(err);
     res.json({error: err});
@@ -141,7 +141,7 @@ const migration = async (req, res) => {
       requestId: result._id,
     });
     await newRequest.save();
-    res.json({ message: "Request submitted!" });
+    res.render("thankyou")
   } catch (err) {
     console.error(err);
     res.json({error: err});
@@ -161,7 +161,7 @@ const idcard = async (req, res) => {
       requestId: result._id,
     });
     await newRequest.save();
-    res.json({ message: "Request submitted!" });
+    res.render("thankyou")
   } catch (err) {
     console.error(err);
     res.json({error: err});
@@ -181,7 +181,7 @@ const transcript = async (req, res) => {
       requestId: result._id,
     });
     await newRequest.save();
-    res.json({ message: "Request submitted!" });
+    res.render("thankyou")
   } catch (err) {
     console.error(err);
     res.json({error: err});

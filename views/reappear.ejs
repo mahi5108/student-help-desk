@@ -17,18 +17,24 @@
       <h2>REAPPEAR FORM EXAMINATION FORM(EXTERNAL EXAM ONLY)</h2>
       <hr />
       <div class="radio-container">
-        <label for="month">Please select any one</label><br />
+        <label for="month"><b>Please select any one</b></label
+        ><br />
 
-        <input type="radio" name="choice" id="novdec" value="nov/dec" />
+        <input type="radio" name="month" id="novdec" value="nov/dec" />
         <label for="novdec">Nov-Dec-2023</label>
-        <input type="radio" name="choice" id="mayjun" value="may/june" />
+        <input type="radio" name="month" id="mayjun" value="may/june" />
         <label for="mayjun">May-June-2023</label><br />
       </div>
       <div class="radio-container">
-        <label for="studenttype">Student Type</label> <br />
-        <input type="radio" name="choice" id="regular" value="regular" />
+        <label for="studenttype"><b>Student Type</b></label> <br />
+        <input type="radio" name="studenttype" id="regular" value="regular" />
         <label for="regular">Regular Student</label>
-        <input type="radio" name="choice" id="exstudent" value="exstudent" />
+        <input
+          type="radio"
+          name="studenttype"
+          id="exstudent"
+          value="exstudent"
+        />
         <label for="exstudent">Ex-Student</label><br />
       </div>
 
@@ -47,7 +53,7 @@
         placeholder="Enter Your E-mail"
       /><br />
 
-      <h3>COURSE DETAILS[T-THEORY,P-PRACTICAL]</h3>
+      <h5>COURSE DETAILS[T-THEORY,P-PRACTICAL]</h5>
       <div id="course">
         <table class="table1">
           <thead>
@@ -137,7 +143,7 @@
         </table>
       </div>
 
-      <h3>EXAMINATION FEE DETAILS</h3>
+      <h5>EXAMINATION FEE DETAILS</h5>
       <div id="exam">
         <table class="table2">
           <thead>
@@ -175,9 +181,19 @@
       <br />
 
       <label for="rs">Examination Fee Paid in Rs.</label>
-      <input type="text" name="rs" id="rs" placeholder="Amount in Ruppees" />
+      <input
+        type="text"
+        name="rs"
+        id="rs"
+        placeholder="Amount in Ruppees"
+      /><br />
       <label for="refno">Payment Reference No.</label>
-      <input type="text" name="refno" id="refno" placeholder="Enter Ref No." />
+      <input
+        type="text"
+        name="refno"
+        id="refno"
+        placeholder="Enter Ref No."
+      /><br />
       <label for="date">Payment Date</label>
       <input type="date" name="date" id="date" /><br />
 
@@ -185,6 +201,8 @@
       <input type="file" name="payment" id="payment" /><br />
       <label for="id">Upload ID Card</label>
       <input type="file" name="idcard" id="id" /><br />
+      <label for="sign">Upload Signature of the Student</label>
+      <input type="file" name="sign" id="sign" /><br />
 
       <div class="checkbox-container">
         <input type="checkbox" name="info is correct" id="correct" required />
@@ -195,8 +213,6 @@
           there.</label
         ><br />
       </div>
-      <label for="sign">Upload Signature of the Student</label>
-      <input type="file" name="sign" id="sign" /><br />
       <div class="form-buttons">
         <button type="button" onclick="window.history.back();">Back</button>
         <button type="reset">reset</button>

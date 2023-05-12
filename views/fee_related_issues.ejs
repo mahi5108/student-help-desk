@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fee Related Issues</title>
+    <link rel="stylesheet" href="/css/global.css" />
+    <style>
+      input,
+      textarea {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <img
+        src="../assets/kkrlogo.png"
+        width="100px"
+        height="100px"
+        alt="logo"
+        style="margin-right: 10px"
+      />
+      <p>NATIONAL INSTITUTE OF TECHNOLOGY, KURUKSHETRA</p>
+    </nav>
+
+    <form
+      style="max-width: 500px; padding-top: 10px"
+      action="/verify-payment"
+      method="post"
+    >
+      <h2>Fee Related Issues</h2>
+      <label for="name">Name</label><br />
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="email">Email</label><br />
+      <input type="email" id="email" name="email" required /><br />
+
+      <label for="transaction-id">Issue</label><br />
+      <textarea
+        type="text"
+        id="transaction-id"
+        name="transaction-id"
+        placeholder="Type your issue here..."
+        required
+      ></textarea>
+
+      <button type="submit">Send Message</button>
+
+      <!-- <div class="error-message">Error message goes here</div>
+      <div class="success-message">Success message goes here</div> -->
+    </form>
+  </body>
+</html>

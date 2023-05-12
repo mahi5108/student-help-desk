@@ -9,7 +9,14 @@
   <body>
     <main>
       <nav>
-        <p>NIT KURUKSHETRA</p>
+        <img
+          src="../assets/kkrlogo.png"
+          width="100px"
+          height="100px"
+          alt="logo"
+          style="margin-right: 10px"
+        />
+        <p>NATIONAL INSTITUTE OF TECHNOLOGY, KURUKSHETRA</p>
       </nav>
       <!-- <hr /> -->
       <!--hey i"m gonna make the students help desk whohoooo-->
@@ -41,20 +48,24 @@
             <li><a href="/helpdesk/djfn/degree">Degree Cerificate</a></li>
           </ul>
         </section>
-        <section>
+        <!-- <section>
           <h2>SCHOLARSHIP SECTION</h2>
           <ul>
             <li>
               <a href="scholarship.html">queries related to scholarship</a>
             </li>
           </ul>
-        </section>
+        </section> -->
         <section>
           <h2>ACCOUNT SECTION</h2>
           <ul>
-            <li><a href="fee related issues.html">fee related issues</a></li>
             <li>
-              <a href="fee payment verification.html"
+              <a href="/helpdesk/djfn/fee_payment_verification"
+                >fee related issues</a
+              >
+            </li>
+            <li>
+              <a href="/helpdesk/djfn/fee_related_issues"
                 >fee payment verification</a
               >
             </li>
@@ -64,12 +75,23 @@
           <h2>EXAM SECTION</h2>
           <ul>
             <li>
-              <a href="exam notifications.html">exam related notifications</a>
+              <a href="/helpdesk/djfn/exam_notifications"
+                >exam related notifications</a
+              >
             </li>
-            <li><a href="exam cutlist.html">cutlist for student exams</a></li>
+            <li>
+              <a href="/helpdesk/djfn/exam_cutlist"
+                >cutlist for student exams</a
+              >
+            </li>
           </ul>
         </section>
       </div>
     </main>
+    <script>
+      function deleteCookie(name) {
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+      }
+    </script>
   </body>
 </html>

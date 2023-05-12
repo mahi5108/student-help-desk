@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Degree certificate</title>
+    <link rel="stylesheet" href="/css/dc.css">
     <link rel="stylesheet" href="/css/global.css" />
   </head>
 
@@ -12,8 +13,15 @@
     <div id="container">
       <div class=>
         <nav>
-          <p>NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA</p>
-        </nav>
+        <img
+          src="../assets/kkrlogo.png"
+          width="100px"
+          height="100px"
+          alt="logo"
+          style="margin-right: 10px"
+        />
+        <p>NATIONAL INSTITUTE OF TECHNOLOGY, KURUKSHETRA</p>
+      </nav>
         <form action="/helpdesk/jhbdf/degree" method="POST">
           <h2>FORM FOR DEGREE CERTIFICATE</h2>
           <hr />
@@ -24,13 +32,13 @@
           <p>
             The Deputy Register(Academic)<br />
             National Institute of Technology Kurukshetra<br />
-            Subject:<b>Request to issue the Degree Certificate</b><br />
+            Subject: <b>Request to issue the Degree Certificate</b><br />
             Sir,<br />Kindly arrange to issue the Degree Certificate.
           </p>
 
           <div class="radio-container">
             <label for="payment based on students" class="tag"
-              >Choose an Option</label
+              ><b>Choose an Option</b></label
             ><br />
             <input type="radio" name="choice" id="bef 16th convo" />
             <label for="bef 16th convo">Student Before 16th Convocation</label
@@ -44,11 +52,12 @@
               >Student from 18th Convocation Onwards</label
             >
           </div>
-          <h3>PARTICULARS OF THE STUDENT</h3>
+          <label for="firsttime"><b>Select any one</b></label><br>
           <input type="radio" name="choice" id="firsttime" />
           <label for="firsttime">Taking the certificate for first time</label>
           <input type="radio" name="choice" id="reissue" />
           <label for="reissue">Re-issue</label><br />
+          <h5>PARTICULARS OF THE STUDENT</h5>
 
           <label for="roll no" class="tag">Roll No</label>
           <input
@@ -72,7 +81,7 @@
           </p>
           <label for="sign">Upload Signature of the Student</label>
           <input type="file" name="sign" id="sign" /><br />
-          <table>
+          <table class="table1">
             <thead>
               <tr>
                 <th colspan="2">Degree Certificate</th>
@@ -101,7 +110,7 @@
               </tr>
             </tbody>
           </table>
-          <table>
+          <table class="table2">
             <thead>
               <tr>
                 <th colspan="2">Postal Charges</th>

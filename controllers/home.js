@@ -80,6 +80,34 @@ const getTranscript = (req, res) => {
     console.error(err);
   }
 };
+const getFeePaymentVerification = (req, res) => {
+  try {
+    res.render("fee_payment_verification");
+  } catch (err) {
+    console.error(err);
+  }
+};
+const getFeeRelatedIssues = (req, res) => {
+  try {
+    res.render("fee_related_issues");
+  } catch (err) {
+    console.error(err);
+  }
+};
+const getExamNotifications = (req, res) => {
+  try {
+    res.render("exam_notifications");
+  } catch (err) {
+    console.error(err);
+  }
+};
+const getExamCutlist = (req, res) => {
+  try {
+    res.render("exam_cutlist");
+  } catch (err) {
+    console.error(err);
+  }
+};
 
 module.exports = {
   getStudentHome,
@@ -91,4 +119,8 @@ module.exports = {
   getIdcard,
   getMigration,
   getTranscript,
+  getFeePaymentVerification,
+  getFeeRelatedIssues,
+  getExamNotifications,
+getExamCutlist
 };

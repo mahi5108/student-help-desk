@@ -1,0 +1,14 @@
+.container {
+	text-align: center;
+	margin-top: 50px;
+}
+
+h1 {
+	font-size: 3em;
+	color: #008000;
+}
+
+p {
+	font-size: 1.5em;
+	color: #333;
+}

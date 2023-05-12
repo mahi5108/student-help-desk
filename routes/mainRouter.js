@@ -18,6 +18,10 @@ router.route("/helpdesk/:id/dmc").get(homeController.getDmc).post(postHomeContro
 router.route("/helpdesk/:id/idcard").get(homeController.getIdcard).post(postHomeController.idcard)
 router.route("/helpdesk/:id/migration").get(homeController.getMigration).post(postHomeController.migration)
 router.route("/helpdesk/:id/transcript").get(homeController.getTranscript).post(postHomeController.transcript)
+router.route("/helpdesk/:id/fee_payment_verification").get(homeController.getFeePaymentVerification)
+router.route("/helpdesk/:id/fee_related_issues").get(homeController.getFeeRelatedIssues)
+router.route("/helpdesk/:id/exam_notifications").get(homeController.getExamNotifications)
+router.route("/helpdesk/:id/exam_cutlist").get(homeController.getExamCutlist)
 
 router.route("/admin/:id").get(adminController.getHistory);
 
