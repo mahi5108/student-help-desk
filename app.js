@@ -11,7 +11,7 @@ const PORT = 3000;
 // app.use(express.json());
 
 const pathName = path.join(__dirname, "public");
-app.use(express.static(pathName))
+app.use(express.static("public"))
 
 const viewsPath = path.join(__dirname, "views");
 // app.engine('html', require('ejs').renderFile);
@@ -38,7 +38,8 @@ db.once("open", function () {
 app.use(mainRouter);
 
 app.get("/", (req, res) => {
-  res.status(200).send("Success123");
+  // res.status(200).send("Success123");'
+  res.redirect('/login');
 });
 
 // app.use("*", (req, res) => {
