@@ -192,10 +192,11 @@ const fee_related_issue = async (req, res) => {
   try {
     const { rollno, email, issue } = req.body;
     const student = await Students.findOne({rollno, email});
+    console.log(rollno);
     if(!student) throw "Incorrect roll no or email.";
     const newFee_Related_Issue = new Fee_Related_Issue({ rollno, email, issue });
     const result = await newFee_Related_Issue.save();
-
+console.log(RequestTypes);
     const newRequest = new Request({
       requestType: RequestTypes.Fee_Related_Issue,
       studentId: student._id,

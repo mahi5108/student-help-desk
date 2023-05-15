@@ -7,6 +7,7 @@ const RequestTypes = {
   Transcript : 'Transcript',
   DMC : 'DMC',
   Degree : 'Degree',
+  Fee_Related_Issue : 'Fee_Related_Issue',
 };
 
 module.exports = {
