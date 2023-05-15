@@ -87,9 +87,9 @@ const getFeePaymentVerification = (req, res) => {
     console.error(err);
   }
 };
-const getFeeRelatedIssues = (req, res) => {
+const getFeeRelatedIssue = (req, res) => {
   try {
-    res.render("fee_related_issues");
+    res.render("fee_related_issue");
   } catch (err) {
     console.error(err);
   }
@@ -120,7 +120,7 @@ module.exports = {
   getMigration,
   getTranscript,
   getFeePaymentVerification,
-  getFeeRelatedIssues,
+  getFeeRelatedIssue,
   getExamNotifications,
 getExamCutlist
 };

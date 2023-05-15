@@ -8,6 +8,7 @@ const { Reappear } = require("../models/reappear");
 const { Request } = require("../models/request");
 const { Transcript } = require("../models/transcript");
 const { RequestTypes } = require("../utils/enum");
+const {Fee_Related_Issue} = require("../models/fee_related_issue");
 
 function getCollection(type) {
   switch (type) {
@@ -27,6 +28,8 @@ function getCollection(type) {
       return Migration;
     case RequestTypes.Transcript:
       return Transcript;
+      case RequestTypes.Fee_Related_Issue:
+        return Fee_Related_Issue;
   }
 }
 

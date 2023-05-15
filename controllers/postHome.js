@@ -10,6 +10,7 @@ const { Dmc } = require("../models/dmc");
 const { Migration } = require("../models/migration");
 const { Idcard } = require("../models/idcard");
 const { Transcript } = require("../models/transcript");
+const {Fee_Related_Issue} = require("../models/fee_related_issue");
 
 const reappear = async (req, res) => {
   try {
@@ -187,6 +188,26 @@ const transcript = async (req, res) => {
     res.json({error: err});
   }
 };
+const fee_related_issue = async (req, res) => {
+  try {
+    const { rollno, email, issue } = req.body;
+    const student = await Students.findOne({rollno, email});
+    if(!student) throw "Incorrect roll no or email.";
+    const newFee_Related_Issue = new Fee_Related_Issue({ rollno, email, issue });
+    const result = await newFee_Related_Issue.save();
+
+    const newRequest = new Request({
+      requestType: RequestTypes.Fee_Related_Issue,
+      studentId: student._id,
+      requestId: result._id,
+    });
+    await newRequest.save();
+    res.render("thankyou")
+  } catch (err) {
+    console.error(err);
+    res.json({error: err});
+  }
+};
 
 module.exports = {
   reappear,
@@ -197,4 +218,5 @@ module.exports = {
   migration,
   idcard,
   transcript,
+  fee_related_issue,
 };
