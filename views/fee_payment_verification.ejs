@@ -25,21 +25,21 @@
 
     <form
       style="max-width: 500px; padding-top: 10px"
-      action="/verify-payment"
+      action="/helpdesk/ugyj/fee_payment_verification"
       method="post"
     >
       <h2>Fee Payment Verification</h2>
-      <label for="name">Name</label><br />
-      <input type="text" id="name" name="name" required /><br />
+      <label for="roll no">Roll No</label><br />
+      <input type="number" id="roll no" name="rollno" required /><br />
 
       <label for="email">Email</label><br />
       <input type="email" id="email" name="email" required /><br />
 
-      <label for="transaction-id">Transaction ID</label><br />
+      <label for="transactionId">Transaction ID</label><br />
       <input
         type="text"
-        id="transaction-id"
-        name="transaction-id"
+        id="transactionId"
+        name="transactionId"
         required
       /><br />
 

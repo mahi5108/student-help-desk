@@ -11,6 +11,7 @@ const { Migration } = require("../models/migration");
 const { Idcard } = require("../models/idcard");
 const { Transcript } = require("../models/transcript");
 const {Fee_Related_Issue} = require("../models/fee_related_issue");
+const {Fee_Payment_Verification} = require("../models/fee_payment_verification");
 
 const reappear = async (req, res) => {
   try {
@@ -192,13 +193,34 @@ const fee_related_issue = async (req, res) => {
   try {
     const { rollno, email, issue } = req.body;
     const student = await Students.findOne({rollno, email});
-    console.log(rollno);
+   
     if(!student) throw "Incorrect roll no or email.";
     const newFee_Related_Issue = new Fee_Related_Issue({ rollno, email, issue });
     const result = await newFee_Related_Issue.save();
-console.log(RequestTypes);
+
     const newRequest = new Request({
       requestType: RequestTypes.Fee_Related_Issue,
+      studentId: student._id,
+      requestId: result._id,
+    });
+    await newRequest.save();
+    res.render("thankyou")
+  } catch (err) {
+    console.error(err);
+    res.json({error: err});
+  }
+};
+const fee_payment_verification = async (req, res) => {
+  try {
+    const { rollno, email, transactionId } = req.body;
+    const student = await Students.findOne({rollno, email});
+   
+    if(!student) throw "Incorrect roll no or email.";
+    const newFee_Payment_Verification = new Fee_Payment_Verification({ rollno, email, transactionId });
+    const result = await newFee_Payment_Verification.save();
+
+    const newRequest = new Request({
+      requestType: RequestTypes.Fee_Payment_Verification,
       studentId: student._id,
       requestId: result._id,
     });
@@ -220,4 +242,5 @@ module.exports = {
   idcard,
   transcript,
   fee_related_issue,
+  fee_payment_verification,
 };

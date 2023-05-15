@@ -17,7 +17,9 @@
     case "DMC": ejsFile = "dmccard.ejs"; break; case "IdCard": ejsFile =
     "idcardcard.ejs"; break; case "Migration": ejsFile = "migrationcard.ejs";
     break; case "Transcript": ejsFile = "transcriptcard.ejs"; break; case
-    "Fee_Related_Issue": ejsFile = "fee_related_issue_card.ejs"; break;} } %>
+    "Fee_Related_Issue": ejsFile = "fee_related_issue_card.ejs"; break;case
+    "Fee_Payment_Verification": ejsFile = "fee_payment_verification_card.ejs";
+    break;} } %>
     <div class="form-container">
       <nav>
         <img
@@ -44,6 +46,9 @@
           <option value="Reappear">Reappear</option>
           <option value="Transcript">Transcript</option>
           <option value="Fee_Related_Issue">Fee_Related_Issue</option>
+          <option value="Fee_Payment_Verification">
+            Fee_Payment_Verification
+          </option>
         </select>
         <button type="submit">SUBMIT</button>
       </form>

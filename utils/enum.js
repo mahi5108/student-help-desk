@@ -8,6 +8,7 @@ const RequestTypes = {
   DMC : 'DMC',
   Degree : 'Degree',
   Fee_Related_Issue : 'Fee_Related_Issue',
+  Fee_Payment_Verification : 'Fee_Payment_Verification',
 };
 
 module.exports = {

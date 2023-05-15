@@ -9,6 +9,7 @@ const { Request } = require("../models/request");
 const { Transcript } = require("../models/transcript");
 const { RequestTypes } = require("../utils/enum");
 const {Fee_Related_Issue} = require("../models/fee_related_issue");
+const {Fee_Payment_Verification} = require("../models/fee_payment_verification");
 
 function getCollection(type) {
   switch (type) {
@@ -30,6 +31,8 @@ function getCollection(type) {
       return Transcript;
       case RequestTypes.Fee_Related_Issue:
         return Fee_Related_Issue;
+        case RequestTypes.Fee_Payment_Verification:
+        return Fee_Payment_Verification; 
   }
 }
 

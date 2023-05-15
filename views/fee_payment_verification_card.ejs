@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Card Example</title>
+  </head>
+  <body>
+    <% console.log({request}) %>
+    <div class="card">
+      <h3>Fee_Payment_Verification</h3>
+      <div class="card-info">
+        <span>Roll No:<%- request.rollno %></span><br />
+        <span>Transaction ID:<%- request.transactionId %></span><br />
+        <span>Email:<%- request.email %></span><br />
+      </div>
+    </div>
+  </body>
+</html>
